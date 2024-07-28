@@ -1,0 +1,22 @@
+.About {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.About p {
+  font-size: 10px;
+}
+/* Media Queries */
+@media (max-width: 430px) {
+  .About .Heading {
+    font-size: 15px;
+  }
+  .About p {
+    font-size: 5px;
+  }
+}

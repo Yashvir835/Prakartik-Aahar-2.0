@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap");
+/* Imported the fit font from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+  /* Here I used the imported font family */
+  font-family: Outfit;
+}
+body {
+  font-family: roboto, sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.app {
+  width: 90%;
+  margin: auto;
+}
