@@ -1,112 +1,88 @@
+/* Home.module.css */
 .home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.Left {
+  flex: 1;
+  padding: 20px;
+}
+
+.Right {
+  flex: 1;
   height: 90vh;
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   flex-direction: column;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 0;
+  text-align: center;
 }
+
 .headerContainer {
-  width: auto;
-  margin-left: 40px;
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
   font-weight: bold;
   font-size: 20px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibric, "Trebuchet MS ",
-    sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibric, "Trebuchet MS", sans-serif;
   color: black;
 }
-.home .headerContainer p {
+
+.headerContainer p {
   margin-top: 15px;
   padding: 0;
   font-size: 40px;
   font-weight: lighter;
   color: black;
 }
-.home .headerContainer button {
+
+.headerContainer button {
   background-color: black;
-  margin-top: 20px;
+  color: white;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  height: 50px;
-  width: 180px;
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
+  transition: background-color 0.3s;
 }
 
 .headerContainer button:hover {
-  background-color: #2e4b5a;
-  cursor: pointer;
-  transition: 0.3s ease-in-out;
+  background-color: #333;
 }
 
-/* Mobile View*/
-
-@media only screen and (min-width: 350px) and (max-width: 600px) {
-  .home {
-    justify-content: center;
-    align-items: center;
-  }
-  .headerContainer {
-    margin-left: 0;
-    border-radius: 10px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: #5f8279;
-    color: white;
-  }
-  .home .headerContainer h1 {
-    font-size: 40px;
-    height: 30px;
-    margin: 30px 0px;
-    color: white;
-  }
-  .home .headerContainer p {
-    font-size: 30px;
-    color: white;
-  }
-  .headerContainer button {
-    background-color: rgb(70, 64, 64);
-    color: #86929c;
-    margin-bottom: 30px;
-  }
+.About {
+  width: 100%;
+  padding: 20px;
+  background-size: cover;
+  background-position: center;
 }
-@media screen and (max-width: 350px) {
-  .home {
-    justify-content: center;
-    align-items: center;
-  }
-  .headerContainer {
-    margin-left: 0;
-    border-radius: 10px;
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+@media (max-width: 768px) {
+  .container {
     flex-direction: column;
-    background-color: #5f8279;
-    color: white;
   }
-  .home .headerContainer h1 {
+
+  .headerContainer p {
     font-size: 30px;
-    height: 60px;
-    /* margin: 30px 0px; */
-    color: white;
   }
-  .home .headerContainer p {
-    font-size: 20px;
-    color: white;
-  }
+
   .headerContainer button {
-    background-color: rgb(70, 64, 64);
-    color: #86929c;
-    margin-bottom: 30px;
+    padding: 8px 16px;
   }
 }
